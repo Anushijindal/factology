@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    list-style: none;
+}
+header{
+    padding: 30px;
+    background-color: aqua;
+    color: bisque;
+    font-size: 50px;
+    border: 2px solid rgb(38, 50, 90);
+   text-align: center;
+   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+nav{
+    background-color: rgb(65, 61, 61);
+    padding: 10px;
+    transition: 0.5s;
+    position: sticky;
+}
+nav:hover{
+    padding: 12px;
+}
+nav a{
+    color: bisque;
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav a:hover{
+color: blue;
+font-size: 30px;
+}
+.block1{
+       height: 100%;
+       width: 20%;
+       background-color: antiquewhite;
+       float: left;
+}
+.block2{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(12, 12, 87);
+    float: right;
+    padding: 10px;
+  
+}
+.block2 h2{
+    
+    padding: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    
+}
+.block2 img{
+    float: right;
+    width: 30%;
+    height: 30%;
+    transition: 0.5s;
+    margin-bottom: 20px;
+   
+}
+.block2 img:hover{
+    width: 40%;
+    height: 40%;
+}
+.block3{
+    height: 300px;
+    width: 150px;
+    background-color: antiquewhite;
+    margin: 10px;
+    transition: 0.5s;
+}
+.block3:hover{
+    height: 315px;
+    width: 200px;
+}
+.fact_block{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#flower img,#universe img,#animal img{
+    height: 100px;
+    width: 100%;
+    position:sticky;
+}
+#flower p,#animal p,#universe p{
+    margin-left: 10px;
+    color: darkmagenta;
+    font-size: 20px;
+}
+#flower a,#animal a,#universe a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: aquamarine;
+    padding: 10px;
+    
+}
+#flower a:hover,#animal a:hover,#universe a:hover{
+    background-color: aqua;
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#contents{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: gold;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#options a{
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+#options a:hover{
+    font-size: 30px;
+    color: crimson;
+}
+footer{
+    background-color:rgb(65, 61, 61) ;
+    padding: 20px;
+    transition: 0.5s;
+    text-align: right;
+    text-decoration: none;
+    
+}
+footer:hover{
+    padding: 25px;
+}
+footer a{
+    color: bisque;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    
+}
+footer a:hover{
+    font-size: 25px;
+    color: blue;
+}

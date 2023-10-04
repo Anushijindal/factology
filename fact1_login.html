@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="fact1_login.css">
+</head>
+<body id="body">
+    <h3 id="head">login for quick notifications!</h3>
+    <form id="form" onsubmit="colorchg1();">
+        <div class="name">
+        <h2>login</h2>
+        </div>
+    <div class="maincon" id="maincon1">
+        <div class="subcon">
+        <p>User Name: <input type="text" id="uname" name="Username" required placeholder="enter User Name"></p>
+        <p>password: <input type="password" id="passw" name="password" required placeholder="enter your password"></p>
+        </div>
+        <div>
+            <p class="check"><input type="checkbox" id="rem" checked="checked" name="check">Remember Me</p>
+            
+                <!-- <input type="checkbox" checked="checked" name="remember">Remember me -->
+            
+            <p class="pas"><a href="#">forget password?</a></p>
+        </div>
+        <button class="submit" id="subm" type="submit">login</button>
+        <p class="mem">Not a member? <a href="register.html" class="mem">Register here!</a></p>
+    </div>
+    </form>
+    <script>
+        var sub = document.getElementById("subm");
+        var uname1 = document.getElementById("uname");
+        function colorchg1() {
+            //  if(document.getElementById("uname").value.length !==0 && document.getElementById("passw").value.length !==0){
+            // document.getElementById("head").innerHTML = "success";
+            // alert("Success!");
+            var p = document.createElement("h2");
+            var txt = document.createTextNode(uname1.value + ", you are successfully logged in!");
+            document.getElementById("body").appendChild(p);
+            p.appendChild(txt);
+            document.getElementById("body").removeChild(document.getElementById("form"));
+            // window.location.replace("fact_project1.html");
+            var link =document.createElement("a");
+        var atxt = document.createTextNode("Home");
+        link.appendChild(atxt);
+        link.setAttribute("href", "fact_project1.html")
+        document.getElementById("body").appendChild(link);
+        link.setAttribute("class", "homelink");
+            return true;
+
+            // removeChild(document.getElementById("form"));
+            // window.open("register.html","reg","width=100,height=100,left=100,top=100");
+             }
+            //  if(document.getElementById("rem").checked) {
+            //     document.getElementById("body").removeChild(document.getElementById("form"));
+            //  }
+        
+    </script>
+</body>
+</html>
